@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Portfolio Web" />
+    <meta name="description" content="Zakiy's Personal Portfolio Web" />
+    <meta name="author" content="Zakiy Nashrudin Wahid" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" media="all" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+      media="all"
+    />
+
+    <!-- Web Title -->
+    <title>Zakiy's Personal Portfolio Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" media="all" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&family=Comfortaa:wght@300;400;500;700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lexend:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+      media="all"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+      media="all"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+        <!-- Navbar -->
+        <nav>
+          <img src="img/logo.webp" alt="My Logo" class="logo" />
+
+          <div class="navbar-nav">
+            <ul>
+              <li><a href="#header" id="navbar-header">Home</a></li>
+              <li><a href="#about" id="navbar-about">About</a></li>
+              <li>
+                <a href="#services" id="navbar-services">Services</a>
+              </li>
+              <li>
+                <a href="#portfolio" id="navbar-portfolio">Portfolio</a>
+              </li>
+              <li><a href="#contact" id="navbar-contact">Contact</a></li>
+            </ul>
+            <span class="material-symbols-outlined" id="close"> close </span>
+          </div>
+          <span class="material-symbols-outlined" id="open"> menu </span>
+        </nav>
+        <div class="header-text">
+          <p>Fullstack Developer</p>
+          <h1>
+            Hi, My name is <span>Zakiy</span> <br />
+            I'm from Indonesia
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/user.webp" alt="My Profile" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vel
+              exercitationem dicta assumenda cum aperiam incidunt distinctio
+              facilis quo mollitia repellat dignissimos deserunt esse veniam,
+              nihil aliquam aut numquam rem?
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experiences')">
+                Experiences
+              </p>
+              <p class="tab-links" onclick="opentab('educations')">
+                Educations
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Application Development</span><br />HTML, CSS,
+                  Javascript, Tailwind, ReactJs, React Native, NodeJs,
+                  PostgreSQL, RESTfulAPIs, CI/CD.
+                </li>
+                <li>
+                  <span>Mobile Application Development</span><br />Java, Kotlin,
+                  Swift, MVVM/MVP, GraphQL.
+                </li>
+                <li>
+                  <span>Game Development</span><br />C++, Rust, Unreal Engine 5,
+                  Unity 3D.
+                </li>
+                <li>
+                  <span>Artificial Intelligence Development</span><br />Python,
+                  SQL, Statistics, Machine Learning, Deep Learning, Generative
+                  AI, MLOps.
+                </li>
+                <li>
+                  <span>Language Mastery</span><br />Native in Indonesian,
+                  Fluent in English, Intermediate in Chinese, Beginner in
+                  Japanese.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experiences">
+              <ul>
+                <li>
+                  <span>2024-2026</span><br />Freelance as Fullstack Web
+                  Developer.
+                </li>
+                <li>
+                  <span>2026-2027</span><br />Internship as Software Developer
+                  at PT Zona Edukasi Nusantara.
+                </li>
+                <li>
+                  <span>2027-2030</span><br />Work as Software Engineer at
+                  Brilliant.org.<Brilliant class="org"></Brilliant>
+                </li>
+                <li>
+                  <span>2030-2035</span><br />Work as Artificial Intelligence
+                  Engineer at Squirrel AI
+                </li>
+                <li>
+                  <span>2035-current</span><br />Founder and Chief Executive
+                  Officer of PT Ex-Gen
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="educations">
+              <ul>
+                <li>
+                  <span>2023-2027</span><br />Bachelor Degree of Computer
+                  Science at University of Indonesia
+                </li>
+                <li>
+                  <span>2030-2032</span><br />Master Degree of Artificial
+                  Intelligence at Massachusetts Institute of Technology
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <span class="material-symbols-outlined"> language </span>
+            <h2>Build Responsive Web App</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              necessitatibus quasi molestiae! Iste incidunt officia obcaecati
+              cum quia sapiente neque esse ipsum! Alias magni error incidunt
+              expedita dicta molestiae consectetur!
+            </p>
+            <a href="#">See more &rarr; </a>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> gamepad </span>
+            <h2>Build Interesting 3D Game</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              necessitatibus quasi molestiae! Iste incidunt officia obcaecati
+              cum quia sapiente neque esse ipsum! Alias magni error incidunt
+              expedita dicta molestiae consectetur!
+            </p>
+            <a href="#">See more &rarr; </a>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> apps </span>
+            <h2>Build Interactive Mobile App</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              necessitatibus quasi molestiae! Iste incidunt officia obcaecati
+              cum quia sapiente neque esse ipsum! Alias magni error incidunt
+              expedita dicta molestiae consectetur!
+            </p>
+            <a href="#">See more &rarr; </a>
+          </div>
+          <div>
+            <span class="material-symbols-outlined">
+              heap_snapshot_thumbnail
+            </span>
+            <h2>Build Complex AI Architecture</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              necessitatibus quasi molestiae! Iste incidunt officia obcaecati
+              cum quia sapiente neque esse ipsum! Alias magni error incidunt
+              expedita dicta molestiae consectetur!
+            </p>
+            <a href="#">See more &rarr; </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/work-1.webp" alt="First Portfolio" />
+            <div class="layer">
+              <h2>Social Media App</h2>
+              <p>The app connects you to all peoples around the world.</p>
+              <a href=""
+                ><span class="material-symbols-outlined"> login </span></a
+              >
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-2.webp" alt="Second Portfolio" />
+            <div class="layer">
+              <h2>Music App</h2>
+              <p>The app connects you to all peoples around the world.</p>
+              <a href=""
+                ><span class="material-symbols-outlined"> login </span></a
+              >
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-3.webp" alt="Third Portfolio" />
+            <div class="layer">
+              <h2>Online Shopping App</h2>
+              <p>The app connects you to all peoples around the world.</p>
+              <a href=""
+                ><span class="material-symbols-outlined"> login </span></a
+              >
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-regular fa-envelope"></i
+              ><span>:</span>zakiynashrudin1st@gmail.com
+            </p>
+            <p>
+              <i class="fa-brands fa-whatsapp"></i><span>:</span>082329026007
+            </p>
+            <div class="social-icons">
+              <a
+                href="https://www.instagram.com/zakiy.znw/"
+                aria-label="My Instagram Account"
+                ><i class="fa-brands fa-instagram"></i></a
+              ><a
+                href="https://www.threads.net/@zakiy.znw"
+                aria-label="My Threads Account"
+                ><i class="fa-brands fa-threads"></i></a
+              ><a
+                href="https://www.linkedin.com/in/zakiy-nashrudin-0336622a2/"
+                aria-label="My Linkedin Account"
+                ><i class="fa-brands fa-linkedin"></i></a
+              ><a
+                href="https://twitter.com/ZakiyN28028"
+                aria-label="My Twitter Account"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+            <a href="img/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                required
+                autocomplete="on"
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+                autocomplete="on"
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                required
+                autocomplete="on"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="message"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="copyright">
+        <p>Copyright &copy; Zakiy. Made by Zakiy Nashrudin Wahid</p>
+      </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="script.js" async defer></script>
+    <script
+      src="https://kit.fontawesome.com/3c3fa59c9f.js"
+      crossorigin="anonymous"
+      async
+      defer
+    ></script>
+  </body>
+</html>
